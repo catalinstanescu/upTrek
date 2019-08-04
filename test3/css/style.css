@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6ffff;
+}
+
+body, html, canvas {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    background-color: #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#properties {
+    padding: 0 20px 0 20px;
+    border: 1px solid #000000;
+    background-color: #80e5ff;
+    width: 300px;
+    height: 400px;
+}
+
+#img-width, #img-height, #btn-set {
+    width: 255px;
+    height: 25px;
+}
+
+#picker {
+    width: 255px;
+}
+
+#properties-title {
+    font-size: 25px;
+    color: #005266;
+    margin: 20px 0 10px 0;
+    border: 1px solid #003d4d;
+    border-style: solid none solid none;
+    text-align: center;
+}
+
+#app {
+    border: 1px solid #e6ffff;
+    margin: 0 auto;
+}
+
+#app div {
+    float:left;
+    cursor: crosshair;
+}
+
+[data-color] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+[data-color="red"] {
+    background: red;
+}
+
+[data-color="green"] {
+    background: green;
+}
+
+[data-color="blue"] {
+    background: blue;
+}
